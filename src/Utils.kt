@@ -19,3 +19,14 @@ fun String.md5() = BigInteger(1, MessageDigest.getInstance("MD5").digest(toByteA
  * The cleaner shorthand for printing output.
  */
 fun Any?.println() = println(this)
+
+/**
+ * Split this [String] on the last occurrence of [delimiter].
+ */
+fun String.splitLast(delimiter: String = " "): Pair<String, String> =
+    lastIndexOf(delimiter).let { index ->
+        substring(0, index) to substring(index + delimiter.length)
+    }
+
+@Suppress("FunctionName")
+fun Any?.TODO(): Nothing = TODO()

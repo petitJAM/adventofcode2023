@@ -28,8 +28,8 @@ fun main() {
   // test if implementation meets criteria from the description, like:
   val testInput = readInput("Day${DAY_NUM}_test")
   check(part1(testInput) == 1)
-
   // check(part2(testInput) == 1)
+
   val input = readInput("Day$DAY_NUM")
   println("Part 1: \${part1(input)}")
   println("Part 2: \${part2(input)}")
